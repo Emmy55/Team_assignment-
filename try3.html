@@ -12,11 +12,7 @@
             box-sizing: border-box;
             font-family: 'Times New Roman', Times, serif;
         }
-        body {
-            background: no-repeat;
-            background: linear-gradient( white,green);
-            /* height: max-content; */
-        }
+        
         .wrapper {
             width: 100%;
         }
@@ -69,9 +65,23 @@
             color: white;
             transition: opacity 0.30s;
         }
-        h2, p{
+        p {
             position: relative;
-            bottom: -180px;
+            bottom: -147px;
+            width: 160px;
+            /* font-size: 11px; */
+            color: white;
+        
+            }
+            h2{
+            position: relative;
+            bottom: -140px;
+            /* left: 15px; */
+            width:140px;
+            /* font-size: 18px; */
+        }
+        .wrapper .container .hero-section .gallery .caption:active {
+                display: none;
         }
         .wrapper .container .hero-section .gallery .caption:hover {
             opacity: 1;
@@ -82,6 +92,27 @@
             /* height: max-content; */
         }
     @media screen and (max-width:600px) {
+        #width {
+            width: 49%;
+        }
+        .wrapper .container .hero-section .gallery .caption {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 15px;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            display: flex;
+             /* justify-content:center; */
+            align-items: center; 
+            text-align: center;
+            flex-direction: column;
+            background: linear-gradient(rgba(25, 21, 21, 0.196), rgba(0, 128, 0, 0.646));
+            opacity: 0;
+            color: white;
+            transition: opacity 0.30s;
+        }
         body{
             overflow-x: hidden;
             height: 900px;
@@ -94,23 +125,24 @@
             position: relative;
             bottom: -67px;
             width: 160px;
-            left: 43px;
+            /* left: 43px; */
             color: white;
         
             }
             h2{
             position: relative;
-            bottom: -60px;
-            left: 44px;
+            bottom: -70px;
+            left: -19px;
             width:70px;
         }
+       
             .wrapper .container .hero-section .gallery .caption {
             opacity: 0.5;
-            width: 48%;
+            width: 99%;
             height: 100%;
             
         }
-            .wrapper .container .hero-section .gallery .caption:hover {
+            .wrapper .container .hero-section .gallery .caption:active {
                 display: none;
         }
             .wrapper .container .hero-section .gallery .image-section img {
@@ -184,11 +216,17 @@
             .gallery{
                 width: 0px;
             }
+            
+        
         }
         @media screen and (max-width:900px) and (min-width:600px) {
            body {
             height: 100vh;
            }
+           .john {
+            width: 48px;
+            text-align: center;
+        }
             .move:nth-child(4){
                 display: none;
             }
@@ -207,7 +245,7 @@
         }
             p {
             position: relative;
-            bottom: -67px;
+            bottom: -87px;
             width: 150px;
             font-size: 11px;
             color: white;
@@ -215,7 +253,7 @@
             }
             h2{
             position: relative;
-            bottom: -60px;
+            bottom: -90px;
             /* left: 15px; */
             width:140px;
             font-size: 18px;
@@ -240,7 +278,7 @@
                     <div class="image-section">
                         <img src="smart.png" alt="">
                     </div>
-                    <div class="caption">
+                    <div class="caption" id="width">
                         <h2 id="john">Johnson Adura </h2>
                         <p id="john">A Full Stack Developer</p>
                     </div>
@@ -269,7 +307,7 @@
                     </div>
                     <div class="caption">
                         <h2>Hover one </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam numquam natus possimus doloribus omnis consequatur nostrum obcaecati. Blanditiis, sapiente!</p>
+                        <p>A Full Stack Developer</p>
                     </div>
                 </div>
                 <div class="gallery five">
@@ -278,7 +316,7 @@
                     </div>
                     <div class="caption">
                         <h2>Hover one </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam numquam natus possimus doloribus omnis consequatur nostrum obcaecati. Blanditiis, sapiente!</p>
+                        <p>A Full Stack Developer</p>
                     </div>
                 </div>
                 <div class="gallery six">
@@ -287,7 +325,7 @@
                     </div>
                     <div class="caption">
                         <h2>Hover one </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam numquam natus possimus doloribus omnis consequatur nostrum obcaecati. Blanditiis, sapiente!</p>
+                        <p>A Full Stack Developer</p>
                     </div>
                 </div>
                 <div class="gallery seven">
@@ -296,7 +334,7 @@
                     </div>
                     <div class="caption">
                         <h2>Hover one </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ipsam numquam natus possimus doloribus omnis consequatur nostrum obcaecati. Blanditiis, sapiente!</p>
+                        <p>A Full Stack Developer</p>
                     </div>
                 </div>
             </div>
